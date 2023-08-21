@@ -29,8 +29,6 @@ body {
   line-height: 1.5;
   letter-spacing: .32px;
   color: var(--color-navyblue);
-  margin: 0;
-  padding: 0;
 }
 /* ---- Typography ---- */
 
@@ -52,18 +50,26 @@ body {
   text-decoration: none;
   font-weight: 500;
   color: var(--color-navyblue);
-  cursor: default;
 }
 
-.navigation-list-item:active {
+/*.navigation-list-item:active {
   color: var(--color-ocean);
-}
+}*/
 
 .header-address a {
   text-decoration: none;
   font-style: normal;
   color: var(--color-slate);
-  cursor: default;
+}
+
+.navigation-list-item a:hover,
+.navigation-list-item a:focus {
+  color: var(--color-ocean);
+}
+
+.header-address a:hover,
+.header-address a:focus {
+  color: var(--color-ocean);
 }
 /* ---- Link Style ---- */
 
@@ -77,7 +83,6 @@ body {
   letter-spacing: .54px;
   text-decoration: none;
   text-transform: uppercase;
-  cursor: default;
 }
 
 .header    {color: var(--color-navyblue);}
@@ -129,17 +134,25 @@ body {
   background: var(--color-iris);
   box-shadow: 0px 4px 4px 0px var(--shadow-box);
   border: none;
-}
 
-.order-services:hover { background: var(--color-ocean); }
-
-.button-order-text {
   text-align: center;
   color: var(--color-white);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: .64px;
 }
+
+.order-services:hover { background-color: var(--color-ocean); }
+
+.order-services:active { background: var(--color-iris); }
+
+/*.button-order-text {
+  text-align: center;
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: .64px;
+}*/
 /* --- Hero Section --- */
 
 /* - Service  Section - */
@@ -229,9 +242,15 @@ body {
   letter-spacing: .64px;
 }
 
-.filter:hover {
+.filter:hover,
+.filter:focus {
   background: var(--color-ocean);
   color: var(--color-white);
+}
+
+.filter:active {
+  background: var(--color-cloud);
+  color: var(--color-iris);
 }
 
 .portfolio-list {
