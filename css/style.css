@@ -34,6 +34,7 @@ body {
 
 /* ---- List Style ---- */
 .navigation-list,
+.address-list,
 .section-list,
 .filter-list,
 .portfolio-list {
@@ -56,7 +57,7 @@ body {
   color: var(--color-ocean);
 }*/
 
-.header-address a {
+.address-list-item a {
   text-decoration: none;
   font-style: normal;
   color: var(--color-slate);
@@ -67,14 +68,16 @@ body {
   color: var(--color-ocean);
 }
 
-.header-address a:hover,
-.header-address a:focus {
+.address-list-item a:hover,
+.address-list-item a:focus {
   color: var(--color-ocean);
 }
 /* ---- Link Style ---- */
 
 /* ---- Logo Style ---- */
 .logo {
+  display: flex;
+/*   justify-content: ; */
   height: 24px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -93,7 +96,27 @@ body {
 /* ---- Logo Style ---- */
 
 /* --- Header Style --- */
+.body-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+}
 /* --- Header Style --- */
 
 .section-list {
